@@ -15,8 +15,14 @@ libraryScripts.each {
 apply plugin: 'com.android.library'
 apply plugin: "com.jfrog.artifactory"
 apply plugin: "maven-publish"
+apply plugin: 'jacoco'
 
 group = groupId
+
+
+jacoco {
+    toolVersion = "0.8.2"
+}
 
 android {
 
